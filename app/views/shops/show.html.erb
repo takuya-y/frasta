@@ -1,1 +1,16 @@
 <%= @info.name %>
+  <a href="/shops"></a>
+
+<%= form_for [@info, @review] do |f| %>
+  <%= f.text_field :text %>
+  <%= f.submit '投稿' %>
+<% end %>
+
+<ul>
+<% @reviews.each do |review| %>
+  <li>
+    <%= review.text %>
+  </li>
+<% end %>
+</ul>
+
