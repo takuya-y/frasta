@@ -2,23 +2,14 @@
 </hader>
 
 <div class="contents">
-  <div class="page-header">
-    <h1>フラスタ情報 <small>xxxxxxx</small></h1>
-  </div>
-  <ul class="nav nav-pills">
-    <li role="presentation" class="active"><a href="#">Home</a></li>
-    <li role="presentation"><a href="#">Profile</a></li>
-    <li role="presentation"><a href="#">Messages</a></li>
-  </ul>
-
   <p></p>
 
   <div class="row">
   <% @shops.each do |shop| %>
     <div class="col-xs-6 col-md-3">
+      <h5 class="text-center"><%= shop.name %></h5>
       <a href="/shops/<%= shop.id %>" class="thumbnail">
-        <img src="" alt="<%= shop.image_url %>" >
-        <h5 class="text-center"><%= shop.name %></h5>
+        <img src="<%= shop.image_url %>" alt="<%= shop.image_url %>" >
       </a>
     </div>
   <% end %>
