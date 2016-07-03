@@ -7,3 +7,44 @@
 .inputtext {
   margin-top: 20px;
 }
+
+.left-content {
+  height: 500px;
+  width: 500px;
+  background-color: red;
+  float: left;
+  padding: 10px;
+}
+
+.right-content {
+  height: 500px;
+  width: 280px;
+  background-color: #f9f9f9;
+  float: left;
+  padding: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.show-image img{
+  width: auto;
+  height: auto;
+}
+
+.right-content ul li {
+  width: 280px;
+}
+
+pre {
+  width: 260px;
+  white-space: normal;
+}
+/*ul li {
+  margin: 0;
+  float: left;
+  padding-right: 10px;
+}*/

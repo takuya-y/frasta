@@ -1641,7 +1641,7 @@ pre code {
   width: 58.33333333%;
 }
 .col-xs-6 {
-  width: 50%;
+  /*width: 50%;*/
 }
 .col-xs-5 {
   width: 41.66666667%;
@@ -1965,7 +1965,9 @@ pre code {
     width: 33.33333333%;
   }
   .col-md-3 {
-    width: 25%;
+    /*width: 25%;*/
+    width: 200px;
+    height: 300px;
   }
   .col-md-2 {
     width: 16.66666667%;

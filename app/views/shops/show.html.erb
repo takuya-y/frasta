@@ -1,25 +1,30 @@
 
 <div class="main-content">
 
-  <%= @info.name %>
-    <p></p>
+  <div class="left-content">
+    <%= @info.name %>
+      <p></p>
 
-  <%= image_tag(@info.image_url, :size => "300x300") %>
+   <%= image_tag(@info.image_url, :size => "300x300" ) %>
 
-  <div class="inputtext">
-    <%= form_for [@info, @review] do |f| %>
-      <%= f.text_field :text %>
-      <%= f.submit '投稿' %>
+    <% if user_signed_in? %>
+      <div class="inputtext">
+        <%= form_for [@info, @review] do |f| %>
+          <%= f.text_area :text, :size => "40x5" %>
+          <br>
+          <%= f.submit '投稿' %>
+        <% end %>
+      </div>
     <% end %>
   </div>
 
-  <ul>
-  <% @reviews.each do |review| %>
-    <li>
-      <%= review.text %>
-    </li>
-  <% end %>
-  </ul>
-
+  <div class="right-content">
+    <ul>
+    <% @reviews.each do |review| %>
+      <li>
+      <pre><%= review.text %></pre>
+      </li>
+    <% end %>
+    </ul>
+  </div>
 </div>
-
