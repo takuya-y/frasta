@@ -16,6 +16,15 @@
   padding: 10px;
 }
 
+.row {
+  width: 900px;
+}
+.row li {
+  margin: 5px;
+  float: center;
+  list-style: none;
+}
+
 .right-content {
   height: 500px;
   width: 280px;

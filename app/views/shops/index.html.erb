@@ -5,14 +5,18 @@
   <p></p>
 
   <div class="row">
+  <ul>
   <% @shops.each do |shop| %>
-    <div class="col-xs-6 col-md-3">
-      <h5 class="text-center"><%= shop.name %></h5>
-      <a href="/shops/<%= shop.id %>" class="thumbnail">
-        <img src="<%= shop.image_url %>" alt="<%= shop.image_url %>">
-      </a>
-    </div>
+    <li>
+      <div class="col-xs-6 col-md-3">
+        <h5 class="text-center"><%= shop.name %></h5>
+        <a href="/shops/<%= shop.id %>" class="thumbnail">
+          <img src="<%= shop.image_url %>" alt="<%= shop.image_url %>">
+        </a>
+      </div>
+    </li>
   <% end %>
+  </ul>
   </div>
 
 </div>
